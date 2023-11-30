@@ -3,21 +3,29 @@ package htwberlin.Webtechnologien;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
+@CrossOrigin(origins = "*")
 @RestController
 public class FoodController {
 
     @Autowired
     FoodService service;
 
-    @PostMapping("/food")
+    @PostMapping("/foods")
     public Food createFood(@RequestBody Food food){
         return service.save(food);
     }
 
-    @GetMapping("/food/{id}")
+    @GetMapping("/foods/{id}")
     public Food fetFood(@PathVariable String id){
         long foodId = Long.parseLong(id);
         return service.get(foodId);
+    }
+
+    @GetMapping("/foods")
+    public List<Food> fetFood(){
+        return service.getAll();
     }
 
 }
