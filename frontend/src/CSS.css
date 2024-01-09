@@ -1,0 +1,42 @@
+body{
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.header-section{
+    background-color: #19283F;
+    color:  #A8B9C0;
+    padding-top:15px;
+}
+
+
+
+.menu{
+    list-style: none;
+    margin: 0;
+}
+
+.ui-menu-item{
+   display: inline-block;
+    padding-right: 30px;
+    line-height: 27px ;
+}
+
+.ui-menu-item:last-of-type{
+   border-right: 3px solid #00C7C0;
+}
+
+.ui-menu-item a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.ui-menu-item a {
+    color: #00C7C0;
+}
+
