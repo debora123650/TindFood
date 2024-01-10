@@ -4,7 +4,7 @@
             <img :src="food.image" alt="Food Image" />
             <button @click="likeFood(food)">Like</button>
             <button @click="dislikeFood(food)">Dislike</button>
-            <button @click="addToCart(food)">Add to Cart</button>
+            <button @click="addToCart(food)">Add to List</button>
         </div>
     </div>
 </template>

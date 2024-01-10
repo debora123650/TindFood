@@ -8,12 +8,59 @@ body{
     width: 1170px;
     margin: auto;
 }
+
+.button{
+    font-weight: bold;
+}
+
+
+
+.button{
+    color: #FFC501;
+    background-color: #FF3150;
+    border: none;
+    padding: 13px 40px;
+    border-radius: 15px;
+    outline: none;
+}
+
+.button:hover{
+    background-color: white;
+    color: #19283F;
+    cursor: pointer;
+}
+
+
 .header-section{
     background-color: #19283F;
     color:  #A8B9C0;
     padding-top:15px;
+    padding-bottom: 140px;
 }
 
+.header-section nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 125px;
+}
+
+.header-section main{
+    text-align: center;
+    color: white;
+
+}
+.header-section h1{
+    margin: 0;
+    font-weight: 300;
+    font-size: 51px;
+}
+
+.header-section h2{
+    font-size: inherit;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
 
 
 .menu{
@@ -28,7 +75,7 @@ body{
 }
 
 .ui-menu-item:last-of-type{
-   border-right: 3px solid #00C7C0;
+   border-right: 1px solid #00C7C0;
 }
 
 .ui-menu-item a{
@@ -36,7 +83,25 @@ body{
     text-decoration: none;
 }
 
-.ui-menu-item a {
+.ui-menu-item a:hover{
     color: #00C7C0;
 }
+
+.search-button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 0 30px;
+}
+
+
+
+.search-icon{
+    display: block;
+    width: 23px;
+    height: 24px ;
+    background: url("icons/3917132.png") no-repeat;
+}
+
+
 

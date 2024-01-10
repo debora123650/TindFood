@@ -8,7 +8,7 @@
                             <li class="ui-menu-item"><a href="http://localhost:8080">Home</a></li>
                             <li class="ui-menu-item"><a href="http://localhost:8080">Menu</a></li>
                             <li class="ui-menu-item"><a href="http://localhost:8080">Favourites</a></li>
-                            <li class="ui-menu-item"><a href="http://localhost:8080">Bag</a></li>
+                            <li class="ui-menu-item"><a href="http://localhost:8080">List</a></li>
                             <li class="ui-menu-item"><a href="http://localhost:8080">Contact</a></li>
                         </ul>
 
