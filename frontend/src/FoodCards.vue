@@ -1,7 +1,7 @@
 <template>
     <div class="food-cards-container">
         <div v-for="food in foods" :key="food.id" class="food-card">
-            <img :src= "food.image" alt="Food Image" />
+            <img :src= "food.link" alt="Food Image" />
             <div class="food-content">
                 <p>{{ food.name }}</p>
                 <p>{{ food.price }}</p>

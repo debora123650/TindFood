@@ -1,42 +1,60 @@
 <template>
     <div>
-        <h1>Your ShoppingList</h1>
-        <div v-for="item in cartItems" :key = "item.id">
-            {{item.name}} - {{item.price}}
+        <div class="header-section">
+            <h1>My Shopping List</h1>
+        </div>
+        <div class="main-content">
+            <div v-for="item in cartItems" :key="item.id" class="cart-item">
+                {{ item.name }} - {{ item.price }}
+            </div>
         </div>
     </div>
 </template>
 
 <script>
-
-
-
 export default {
-    computed : {
-        cartItems(){
+    computed: {
+        cartItems() {
             return this.$store.state.cartItems;
-        }
-    }
-
-    }
-
+        },
+    },
+};
 </script>
 
-<style scoped>
-h1 {
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header-section {
     background-color: #19283F;
     color: #A8B9C0;
-    padding-top: 100px; /* Adjust as needed */
-    padding-bottom: 100px; /* Adjust as needed */
+    padding: 15px 0;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
+
 }
 
-h2 {
-    width: 1170px;
-    margin: auto;
+.header-section h1 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 28px;
 }
+
+.main-content {
+    background-color: #00C7C0;
+    padding: 20px;
+    text-align: center;
+    color: #19283F;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
 
 </style>

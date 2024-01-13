@@ -88,25 +88,13 @@ body{
     color: #00C7C0;
 }
 
-.search-button{
-    background-color: transparent;
-    border: none;
-    outline: none;
-    margin: 0 30px;
-}
 
-.search-icon{
-    display: block;
-    width: 23px;
-    height: 24px ;
-    background: url("icons/3917132.png") no-repeat;
-}
 .food-cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: lightcyan;
-    padding: 20px;
+    padding: 10px;
 }
 
 .food-card {
@@ -149,6 +137,8 @@ img {
 .add-to-cart-button:hover {
     background-color: greenyellow;;
 }
+
+
 
 
 
