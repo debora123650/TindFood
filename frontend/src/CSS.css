@@ -14,8 +14,8 @@ body{
 }
 
 
-
-.button{
+.button,
+.header-button {
     color: #FFC501;
     background-color: #FF3150;
     border: none;
@@ -24,7 +24,8 @@ body{
     outline: none;
 }
 
-.button:hover{
+.button:hover,
+.header-button:hover{
     background-color: white;
     color: #19283F;
     cursor: pointer;
@@ -94,14 +95,69 @@ body{
     margin: 0 30px;
 }
 
-
-
 .search-icon{
     display: block;
     width: 23px;
     height: 24px ;
     background: url("icons/3917132.png") no-repeat;
 }
+.food-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: lightcyan;
+    padding: 20px;
+}
+
+.food-card {
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #3c3c3c;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #3c3c3c;
+    background-color: aliceblue;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.food-content {
+    margin-bottom: 10px;
+}
+
+.food-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.like-button,
+.dislike-button,
+.add-to-cart-button {
+    background-color: lightgreen;
+    color: black;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.like-button:hover,
+.dislike-button:hover,
+.add-to-cart-button:hover {
+    background-color: greenyellow;;
+}
+
+
+
+
+
+
+
+
+
 
 
 
