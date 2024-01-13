@@ -3,6 +3,7 @@ import LoginSeite from '../LoginSeite.vue';
 import ShoppingList from '../ShoppingList.vue';
 import HomePage from '../HomePage.vue';
 import FoodCards from "@/FoodCards.vue";
+import Contact from '../ContactPage.vue';
 
 
 const routes = [
@@ -26,6 +27,12 @@ const routes = [
         path: '/foods',
         name: 'Food',
         component: FoodCards,
+    },
+
+    {
+        path: '/contact',
+        name: 'Contact',
+        component: Contact,
     },
 
 ];

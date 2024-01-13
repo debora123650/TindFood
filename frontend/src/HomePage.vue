@@ -6,7 +6,7 @@
                     <ul class="menu">
                         <li class="ui-menu-item"><router-link to="/">Home</router-link></li>
                         <li class="ui-menu-item"><router-link to="/shoppinglist">List</router-link></li>
-                        <li class="ui-menu-item"><a href="http://localhost:8080">Contact</a></li>
+                        <li class="ui-menu-item"><router-link to="/contact">Contact</router-link></li>
 
                     </ul>
                     <router-link to="/login" class="header-button">Login</router-link>
@@ -24,13 +24,6 @@
 
 
         <main>
-            <input type="text" v-model="searchQuery" placeholder="Search for products..." />
-            <button @click="searchProducts">Search</button>
-
-            <input type="text" v-model="inputValue" placeholder="Enter something..." />
-            <input type="number" v-model.number="selectedNumber" min="1" max="10" />
-            <button @click="sendData">Send</button>
-
 
         </main>
         <food-cards  @choose="handleFoodChoice"></food-cards>

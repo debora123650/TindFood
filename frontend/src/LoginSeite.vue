@@ -1,8 +1,6 @@
-import { useRouter } from 'vue-router';
-const router = useRouter();
+
 
 <template>
-
     <div class="login-container">
         <form class="login-form" @submit.prevent="login">
             <h2>Login</h2>
