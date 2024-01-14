@@ -9,8 +9,13 @@ import java.util.List;
 @RestController
 public class FoodController {
 
+    private final FoodService service;
+
     @Autowired
-    FoodService service;
+    public FoodController(FoodService service) {
+        this.service = service;
+    }
+
 
     @PostMapping("/foods")
     public Food createFood(@RequestBody Food food){

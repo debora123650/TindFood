@@ -11,6 +11,11 @@ public class FoodService {
     @Autowired
     FoodRepository repo;
 
+    @Autowired
+    public FoodService(FoodRepository repo) {
+        this.repo = repo;
+    }
+
 
     public Food save(Food food){
         return repo.save(food);

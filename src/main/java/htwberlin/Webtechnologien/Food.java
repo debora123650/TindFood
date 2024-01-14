@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Food {
+public class Food{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -23,6 +23,9 @@ public class Food {
         this.link = link;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
     public Long getId(){
         return id;
     }
