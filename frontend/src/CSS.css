@@ -75,9 +75,6 @@ body{
     line-height: 27px ;
 }
 
-.ui-menu-item:last-of-type{
-   border-right: 1px solid #00C7C0;
-}
 
 .ui-menu-item a{
     color: inherit;
@@ -85,7 +82,7 @@ body{
 }
 
 .ui-menu-item a:hover{
-    color: #00C7C0;
+    color: lightblue;
 }
 
 

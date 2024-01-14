@@ -47,7 +47,7 @@ body {
 }
 
 .main-content {
-    background-color: #00C7C0;
+    background-color: lightblue;
     padding: 20px;
     text-align: center;
     color: #19283F;
